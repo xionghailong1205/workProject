@@ -1,6 +1,8 @@
 const { withContentlayer } = require('next-contentlayer');
 module.exports = withContentlayer({
   /* 其他配置 */
+  output: 'export',
+
   experimental: {
     serverActions: true,
   },
@@ -35,4 +37,6 @@ module.exports = withContentlayer({
       },
     ],
   },
+
+  basePath: '/github-pages',
 });
